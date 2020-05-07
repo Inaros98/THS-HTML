@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+/* con rgba metto lo sfondo "nel background" cioe piu sfocato */
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.wallpaperscraft.com/image/dj_headphones_installation_122020_3840x2160.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+/* Questo mi sposta a destra il blocco di testo creato nel index.html*/
+ul{
+	float: right;
+	list-style-type: none;
+	/* sposto in giu le caselline di menu per avere un layout piu decente e user friendly */
+	margin-top: 25px
+}
+
+/* Metto i "blocchi di testo" "side by side". */
+ul li{
+	display: inline-block;
+}
+
+/* Creo spazio tra i blocchi di linker/testi,	il solid mi crea la tabella (linea) */
+ul li a{
+	text-decotation: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	/* Aggiungendo una "transition" creo un delay che incrementa da 0% a 100% in 0.6s il background */
+	transition: 0.6s ease;
+}
+	
+ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+/* Evidenzo il tasto Home (di bianco) */
+ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	float: left;
+	width: 150px;
+	height: auto;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* sposto il titolo con x,y) */
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 70px;
+}
+	/* qua ripeto le solite cose... a sto punto dovrebbe essere chiaro! */
+.button{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	/* sposto il titolo con x,y) */
+	transform: translate(-50%, -50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
